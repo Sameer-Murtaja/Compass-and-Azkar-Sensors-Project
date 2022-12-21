@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Final project</string>
+    <string name="start_service">Start Service</string>
+    <string name="azkar_service">Azkar Service:</string>
+    <string name="evening_time">Evening Time:</string>
+    <string name="moringing_brightness">Moringing Brightness:</string>
+    <string name="evening_brightness">Evening Brightness:</string>
 </resources>

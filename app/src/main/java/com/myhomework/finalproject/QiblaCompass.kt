@@ -103,7 +103,7 @@ class QiblaCompass : AppCompatActivity(), SensorEventListener {
         }
 
         binding.text.text =
-            "northDegree: $northDegree \nkaabaDegree: $kaabaDegree \nVAL: $direction"
+            "Qibla Angle: $direction"
         binding.img.rotation = direction
 
         if(direction.toInt() == 0){
@@ -148,10 +148,11 @@ class QiblaCompass : AppCompatActivity(), SensorEventListener {
                         userLocation = task.result
                         if (userLocation == null) {
                             requestNewLocationData()
-                        } else {
-                            binding.userLocation.text =
-                                "latitude: ${userLocation?.latitude}\nlongitiue: ${userLocation?.longitude}"
                         }
+//                        else {
+//                            binding.userLocation.text =
+//                                "latitude: ${userLocation?.latitude}\nlongitiue: ${userLocation?.longitude}"
+//                        }
                     }
             } else {
                 Toast.makeText(this, "Please turn on" + " your location...", Toast.LENGTH_LONG)
@@ -189,8 +190,8 @@ class QiblaCompass : AppCompatActivity(), SensorEventListener {
     private val mLocationCallback: LocationCallback = object : LocationCallback() {
         override fun onLocationResult(locationResult: LocationResult) {
             userLocation = locationResult.lastLocation
-            binding.userLocation.text =
-                "latitude: ${userLocation?.latitude}\nlongitiue: ${userLocation?.longitude}"
+//            binding.userLocation.text =
+//                "latitude: ${userLocation?.latitude}\nlongitiue: ${userLocation?.longitude}"
         }
     }
 
