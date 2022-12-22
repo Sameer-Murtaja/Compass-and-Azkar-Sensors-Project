@@ -95,14 +95,15 @@ class AzkarActivity : AppCompatActivity() {
     private fun handleUI(){
         if(!isServiceOff){
             binding.btnAzkarService.text = "Stop Service"
-            binding.btnAzkarService.setBackgroundColor(Color.RED)
+            binding.btnAzkarService.setBackgroundResource(R.drawable.activestexthape)
+            binding.btnAzkarService.setTextColor(Color.WHITE)
             binding.tvMorningTime.isEnabled = false
             binding.tvEveningTime.isEnabled = false
             binding.tvMorningBrightness.isEnabled = false
             binding.tvEveningBrightness.isEnabled = false
         }else{
             binding.btnAzkarService.text = "Start Service"
-            binding.btnAzkarService.setBackgroundColor(Color.GREEN)
+            binding.btnAzkarService.setBackgroundResource(R.drawable.startbtnshabe)
             binding.tvMorningTime.isEnabled = true
             binding.tvEveningTime.isEnabled = true
             binding.tvMorningBrightness.isEnabled = true

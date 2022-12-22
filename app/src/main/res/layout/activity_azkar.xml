@@ -14,7 +14,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/btnstyle"
+        android:background="@drawable/startbtnshabe"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
         android:text="@string/start_service"
