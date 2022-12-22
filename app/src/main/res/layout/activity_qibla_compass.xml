@@ -10,28 +10,28 @@
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/textnotactiveshape"
+        android:padding="10dp"
         android:text="Hello World!"
-        android:textColor="#D8041A"
+        android:textColor="@color/purple_700"
         android:textColorLink="@color/purple_500"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123" />
+        app:layout_constraintTop_toBottomOf="@+id/img" />
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/kaaba"
-        android:contentDescription="TODO" />
+        app:layout_constraintVertical_bias="0.242"
+        app:srcCompat="@drawable/kaaba" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Final project</string>
-    <string name="start_service">Start Service</string>
-    <string name="azkar_service">Azkar Service:</string>
-    <string name="evening_time">Evening Time:</string>
-    <string name="moringing_brightness">Moringing Brightness:</string>
-    <string name="evening_brightness">Evening Brightness:</string>
+    <string name="app_name" translatable="false">Qibla &amp; Azkar</string>
+    <string name="start_service" translatable="false">Start Service</string>
+    <string name="azkar_service" translatable="false">Azkar Service:</string>
+    <string name="evening_time" translatable="false">Evening Time:</string>
+    <string name="moringing_brightness" translatable="false">Moringing Brightness:</string>
+    <string name="evening_brightness" translatable="false">Evening Brightness:</string>
 </resources>

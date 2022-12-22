@@ -5,6 +5,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
@@ -103,11 +104,16 @@ class QiblaCompass : AppCompatActivity(), SensorEventListener {
         }
 
         binding.text.text =
-            "Qibla Angle: $direction"
+            "Qibla Angle: ${direction.toInt()}"
         binding.img.rotation = direction
 
         if(direction.toInt() == 0){
             handleVibration()
+            binding.text.setBackgroundResource(R.drawable.activestexthape)
+            binding.text.setTextColor(Color.WHITE)
+        }else{
+            binding.text.setBackgroundResource(R.drawable.textnotactiveshape)
+            binding.text.setTextColor(Color.RED)
         }
 
 
